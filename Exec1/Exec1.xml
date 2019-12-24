@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Exec1</name>
+    </assembly>
+    <members>
+        <member name="T:Exec1.FormCoordinates">
+            <summary>
+            Класс FormCoordinates
+            Основной класс, в котором происходит форматирование
+            в координаты.
+            </summary>
+        </member>
+        <member name="M:Exec1.FormCoordinates.Main(System.String[])">
+            <summary>
+            Main - входная точка для работы программы
+            </summary>
+            <param name="args">Аргумент метода Main()</param>
+        </member>
+        <member name="M:Exec1.FormCoordinates.Enter(System.String)">
+            <summary>
+            Метод Enter используется для вывода значений,
+            форматируя их в нужный вид.
+            <exampe>
+            <code>
+            string str = "6.1245,7.341";
+            Enter(str);
+            </code>
+            Результат будет X:6,1245 Y=7,341
+            </exampe>
+            </summary>
+            <param name="cord">Принимает строку с координатами</param>
+        </member>
+    </members>
+</doc>

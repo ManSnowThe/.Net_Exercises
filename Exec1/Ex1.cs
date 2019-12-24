@@ -2,8 +2,17 @@
 
 namespace Exec1
 {
+   /// <summary>
+   /// Класс FormCoordinates
+   /// Основной класс, в котором происходит форматирование
+   /// в координаты.
+   /// </summary>
     class FormCoordinates
     {
+        /// <summary>
+        /// Main - входная точка для работы программы
+        /// </summary>
+        /// <param name="args">Аргумент метода Main()</param>
         static void Main(string[] args)
         {
             Console.WriteLine("Input X and Y coordinates:");
@@ -19,7 +28,18 @@ namespace Exec1
 
             Console.ReadLine();
         }
-
+        /// <summary>
+        /// Метод Enter используется для вывода значений,
+        /// форматируя их в нужный вид.
+        /// <exampe>
+        /// <code>
+        /// string str = "6.1245,7.341";
+        /// Enter(str);
+        /// </code>
+        /// Результат будет X:6,1245 Y=7,341
+        /// </exampe>
+        /// </summary>
+        /// <param name="cord">Принимает строку с координатами</param>
         static void Enter(string cord)
         {
             var split = cord.Split(',');
