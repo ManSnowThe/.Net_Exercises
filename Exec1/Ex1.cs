@@ -2,11 +2,11 @@
 
 namespace Exec1
 {
-    class Ex1
+    class FormCoordinates
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите X и Y координаты:");
+            Console.WriteLine("Input X and Y coordinates:");
 
             decimal x = Convert.ToDecimal(Console.ReadLine());
             decimal y = Convert.ToDecimal(Console.ReadLine());
@@ -15,8 +15,9 @@ namespace Exec1
             xy = xy.Replace(',', '.');
             xy = xy.Replace(' ', ',');
 
-            //Console.WriteLine(xy);
             Enter(xy);
+
+            Console.ReadLine();
         }
 
         static void Enter(string cord)
@@ -26,7 +27,7 @@ namespace Exec1
             var str1 = split[0].Replace('.', ',');
             var str2 = split[1].Replace('.', ',');
 
-            Console.WriteLine("X: {0} Y: {1}", str1, str2);
+            Console.WriteLine("X: {0:D} Y: {1:D}", str1, str2);
         }
     }
 }
