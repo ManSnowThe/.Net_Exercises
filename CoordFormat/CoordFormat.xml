@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CoordFormat</name>
+    </assembly>
+    <members>
+        <member name="T:CoordFormat.App">
+            <summary>
+            Логика взаимодействия для App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:CoordFormat.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:CoordFormat.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:CoordFormat.MainWindow">
+            <summary>
+            Частичный класс MainWindow, наследует от Window.
+            Логика взаимодействия для MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:CoordFormat.MainWindow.#ctor">
+            <summary>
+            Метод MainWindow вызывает WPF окно.
+            </summary>
+        </member>
+        <member name="M:CoordFormat.MainWindow.Button_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Метод Button_Click добавляющий событие Click.
+            После того как в textBox1 и textBox2 введены числа,
+            нажатие этой кнопка форматирует их в координаты в textBox3.
+            </summary>
+            <param name="sender">Объект, который вызывает событие</param>
+            <param name="e">Передает информацию обработчика</param>
+        </member>
+        <member name="M:CoordFormat.MainWindow.Enter(System.String)">
+            <summary>
+            Метод Enter используется для вывода значений,
+            форматируя их в нужный вид.
+            <exampe>
+            <code>
+            string str = "6.1245,7.341";
+            Enter(str);
+            </code>
+            Результат будет X:6,1245 Y=7,341
+            </exampe>
+            </summary>
+            <param name="cord"></param>
+        </member>
+        <member name="M:CoordFormat.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:CoordFormat.Properties.Resources">
+            <summary>
+              Класс ресурсов со строгим типом для поиска локализованных строк и пр.
+            </summary>
+        </member>
+        <member name="P:CoordFormat.Properties.Resources.ResourceManager">
+            <summary>
+              Возврат кэшированного экземпляра ResourceManager, используемого этим классом.
+            </summary>
+        </member>
+        <member name="P:CoordFormat.Properties.Resources.Culture">
+            <summary>
+              Переопределяет свойство CurrentUICulture текущего потока для всех
+              подстановки ресурсов с помощью этого класса ресурсов со строгим типом.
+            </summary>
+        </member>
+    </members>
+</doc>
