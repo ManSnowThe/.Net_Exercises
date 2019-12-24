@@ -16,15 +16,26 @@ using System.Windows.Shapes;
 namespace CoordFormat
 {
     /// <summary>
+    /// Частичный класс MainWindow, наследует от Window.
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// Метод MainWindow вызывает WPF окно.
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Метод Button_Click добавляющий событие Click.
+        /// После того как в textBox1 и textBox2 введены числа,
+        /// нажатие этой кнопка форматирует их в координаты в textBox3.
+        /// </summary>
+        /// <param name="sender">Объект, который вызывает событие</param>
+        /// <param name="e">Передает информацию обработчика</param>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             decimal x = Convert.ToDecimal(textBox1.Text);
@@ -37,6 +48,18 @@ namespace CoordFormat
             Enter(xy);
         }
 
+        /// <summary>
+        /// Метод Enter используется для вывода значений,
+        /// форматируя их в нужный вид.
+        /// <exampe>
+        /// <code>
+        /// string str = "6.1245,7.341";
+        /// Enter(str);
+        /// </code>
+        /// Результат будет X:6,1245 Y=7,341
+        /// </exampe>
+        /// </summary>
+        /// <param name="cord"></param>
         void Enter(string cord)
         {
             var split = cord.Split(',');
