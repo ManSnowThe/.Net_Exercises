@@ -1,0 +1,2 @@
+Input X and Y coordinates:
+X: 3,1235 Y: 4,531
